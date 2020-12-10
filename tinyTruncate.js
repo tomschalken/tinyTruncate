@@ -12,7 +12,7 @@ const tinyTruncate = (
   const firstSpace = text.substring(length - 1).indexOf(' ');
 
   // no space found, return whole text
-  if (firstSpace === -1) return text.trim();
+  if (firstSpace === -1) return text;
 
   return `${text.substring(0, length - 1 + firstSpace).trim()}${separator}`;
 };
